@@ -77,5 +77,6 @@
     2)是因为chrome 监听touch类事件报错：无法被动侦听事件preventDefault，是新版本chrome 浏览器报错
     
    在FooterGuide.vue中goTo(path)中设置为 this.$router.replace(path).catch(err=>{}) 
+   
    以及在App上的style中加入  *{ touch-action: pan-y }  
    
