@@ -64,7 +64,7 @@
 1. 手机号登陆，需要自己注册容联云通讯后先添加一个测试账号，然后在server\util\sms_util.js中修改相应个人配置，之后输入符合格式的手机号即可
 2. 密码登陆，默认用户名abc，密码123
 
-##(注意)
+**(注意)**
   vue cli关闭eslint： 
     在build文件夹打开webpack.base.conf.js 找到这一部分(config.dev.useEslint ? [createLintingRule()] : []) 
     修改 为这样 (config.dev.useEslint ? [] : []) 重新进行 npm start 就可以了
