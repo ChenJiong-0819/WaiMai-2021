@@ -64,14 +64,15 @@
 1. 手机号登陆，需要自己注册容联云通讯后先添加一个测试账号，然后在server\util\sms_util.js中修改相应个人配置，之后输入符合格式的手机号即可
 2. 密码登陆，默认用户名abc，密码123
 
-**(注意)**
-  vue cli关闭eslint： 
+**注意**
+
+  1. vue cli关闭eslint： 
     在build文件夹打开webpack.base.conf.js 找到这一部分(config.dev.useEslint ? [createLintingRule()] : []) 
     修改 为这样 (config.dev.useEslint ? [] : []) 重新进行 npm start 就可以了
-  该项目因为使用的技术比较旧，向如安装stylus时，应该降低版本,建议安装stylus@0.54.5和stylus-loader@3.0.2
-  重复点击底部工具栏会报错
-    1.是因为路由跳转没有catch  
-    2.是因为chrome 监听touch类事件报错：无法被动侦听事件preventDefault，是新版本chrome 浏览器报错
+  2. 该项目因为使用的技术比较旧，向如安装stylus时，应该降低版本,建议安装stylus@0.54.5和stylus-loader@3.0.2
+  3. 重复点击底部工具栏会报错
+    1)是因为路由跳转没有catch  
+    2)是因为chrome 监听touch类事件报错：无法被动侦听事件preventDefault，是新版本chrome 浏览器报错
    在FooterGuide.vue中goTo(path)中设置为 this.$router.replace(path).catch(err=>{}) 
-   以及在App上的style中加入 ( *{ touch-action: pan-y } ) 
+   以及在App上的style中加入  *{ touch-action: pan-y }  
    
