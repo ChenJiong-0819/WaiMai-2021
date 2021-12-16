@@ -80,3 +80,16 @@
    
    以及在App上的style中加入  *{ touch-action: pan-y }  
    
+   
+## 5. App演示截图
+  ### 1.首页
+![msite](./images/msite.PNG)
+  ### 2.商家
+![shop](./images/shop.PNG)
+  ### 3.商品购物车
+![shopCart](./images/shopCart.PNG)
+  ### 4.个人中心
+![profile](./images/profile.PNG)
+  ### 5.登陆页面
+![login](./images/login.PNG)
+ 
