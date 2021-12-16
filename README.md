@@ -81,7 +81,7 @@
    以及在App上的style中加入  *{ touch-action: pan-y }  
    
    
-## 5. App演示截图
+## 5. 演示截图
   ### 1.首页
 ![msite](./images/msite.PNG)
   ### 2.商家
